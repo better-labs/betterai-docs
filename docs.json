@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "BetterAI Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3B82F6",
+    "light": "#60A5FA",
+    "dark": "#2563EB"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -69,9 +69,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/hellobetterai",
-      "github": "https://github.com/better-labs",
-      "linkedin": "https://linkedin.com/company/better-labs"
+      "x": "https://x.com/hellobetterai"
     }
   },
   "redirects": [
