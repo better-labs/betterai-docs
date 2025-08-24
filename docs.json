@@ -71,9 +71,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "BetterAI App",
+          "href": "https://betterai.tools/",
+          "icon": "chart-line"
         },
         {
           "anchor": "Community",
