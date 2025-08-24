@@ -1,0 +1,670 @@
+# BetterAI Documentation Export
+
+This file contains all documentation from the `content/docs` directory, exported in a consolidated format.
+
+---
+
+## 📁 File Tree
+
+```
+content/docs/
+├── changelog.mdx
+├── contact.mdx
+├── guides/
+│   ├── getting-started.mdx
+│   └── using-predictions.mdx
+├── legal/
+│   ├── privacy-policy.mdx
+│   └── terms-of-service.mdx
+└── overview/
+    ├── how-it-works.mdx
+    ├── prediction-markets.mdx
+    └── what-is-betterai.mdx
+```
+
+---
+
+## 📄 content/docs/changelog.mdx
+
+```mdx
+---
+title: "Changelog"
+order: 1
+tags: ["changelog", "updates", "releases"]
+---
+
+# Changelog
+
+## Friday 8/21/25: v0.1 Release
+
+
+Hello friends 👋
+
+Welcome to the initial v0.1 release of BetterAI!
+
+**v0.1 Features**
+
+For now we have a very minimal working app that shows read only views of predictions for markets on https://polymarket.com/. Next week we'll add the ability for you to trigger new predictions manually.
+
+The app pulls the top 100 markets by volume from https://polymarket.com/ and uses a variety of AI models to generate predictions (high and low quality) multiple times per day.
+
+The AI accuracy is still "under development". The predictions you see on the app are live predictions from the AI models. However, for now they are using minimal data enrichment from the web. We'll improve on this significantly in coming weeks.
+
+**Note:** Mobile view is functional, but may have more UX issues than Desktop.
+
+Cheers 🙏
+```
+
+---
+
+## 📄 content/docs/contact.mdx
+
+```mdx
+---
+title: "Contact Us"
+order: 1
+tags: ["contact", "support"]
+---
+
+# Contact Us
+
+If you have any questions, feedback, or need support with BetterAI, please  reach out.
+
+**Email**: [hello@betterai.tools](mailto:hello@betterai.tools)
+
+We typically respond to emails within 24-48 hours during business days.
+```
+
+---
+
+## 📄 content/docs/guides/getting-started.mdx
+
+```mdx
+---
+title: "Getting Started"
+order: 1
+tags: ["guides", "getting-started"]
+---
+
+# Getting Started with BetterAI
+
+Welcome to BetterAI! This guide will help you get started with using our prediction market analysis tool.
+
+## Quick Start
+
+<Step n={1}>
+**Browse Markets**: Start by exploring trending prediction markets on the homepage or use the search function to find specific events you're interested in.
+</Step>
+
+<Step n={2}>
+**Select a Market**: Click on any market that catches your attention. You'll see the market question, current odds, and basic information.
+</Step>
+
+<Step n={3}>
+**Generate Prediction**: Click the "Generate Prediction" button to start the AI analysis process. This may take 30-60 seconds as our AI models research and analyze the market.
+</Step>
+
+<Step n={4}>
+**Review Analysis**: Once complete, you'll receive a comprehensive analysis including:
+- Consensus prediction from multiple AI models
+- Key factors influencing the outcome
+- Current relevant news and data
+- Confidence levels and reasoning
+</Step>
+
+## Understanding Your Credit System
+
+<Callout type="info">
+New users receive **100 free credits daily** that reset at midnight UTC. Each prediction costs 1 credit.
+</Callout>
+
+Your credit balance is displayed in the top navigation. Credits are designed to encourage thoughtful analysis rather than rapid-fire predictions.
+
+## Reading AI Predictions
+
+Our AI predictions include several key components:
+
+### Consensus Prediction
+The overall probability assessment based on all AI models and available data.
+
+### Model Breakdown
+Individual predictions from different AI models (GPT-4, Claude, Gemini) with their reasoning.
+
+### Key Factors
+The most important elements influencing the prediction, ranked by relevance.
+
+### Data Sources
+Links to the specific news articles, reports, and data that informed the analysis.
+
+## Best Practices
+
+<Callout type="tip">
+**Research Multiple Markets**: Use BetterAI's analysis as one input in your decision-making process. Consider multiple related markets and cross-reference predictions.
+</Callout>
+
+- **Check Recency**: Look at when the prediction was generated and if any major news has broken since
+- **Understand Confidence**: Pay attention to confidence levels - lower confidence suggests higher uncertainty
+- **Read the Reasoning**: Don't just look at the prediction percentage; understand the "why" behind it
+- **Consider Market Dynamics**: Remember that prediction markets can be influenced by factors beyond just the likely outcome
+
+## Market Categories
+
+BetterAI covers prediction markets across several categories:
+
+- **Elections**: Political races and voting outcomes
+- **Geopolitics**: International relations and conflicts  
+- **Economics**: Financial markets and economic indicators
+- **Technology**: Tech industry developments and launches
+- **Sports**: Major sporting events and outcomes
+- **Science**: Scientific discoveries and research outcomes
+
+## Getting Help
+
+If you encounter any issues or have questions:
+
+- Check this documentation for detailed guides
+- Contact us at hello@betterai.tools
+- Browse frequently asked questions in our guides section
+
+Ready to start? Head to the [homepage](/) and generate your first prediction!
+```
+
+---
+
+## 📄 content/docs/guides/using-predictions.mdx
+
+```mdx
+---
+title: "Using AI Predictions Effectively"
+order: 2
+tags: ["guides", "predictions", "analysis"]
+---
+
+# Using AI Predictions Effectively
+
+BetterAI provides sophisticated AI analysis, but getting the most value requires understanding how to interpret and apply the insights.
+
+## Understanding Prediction Components
+
+### Probability Scores
+Our AI models provide probability estimates (e.g., 65% chance of outcome). These represent:
+
+- **Consensus View**: The combined assessment across multiple AI models
+- **Data-Driven**: Based on current research and information
+- **Time-Sensitive**: Reflects conditions at the time of generation
+
+<Callout type="warn">
+Probabilities are estimates, not guarantees. Markets can be unpredictable, and new information can dramatically shift outcomes.
+</Callout>
+
+### Confidence Levels
+Each prediction includes a confidence indicator:
+
+- **High Confidence**: Strong consensus across models with clear supporting data
+- **Medium Confidence**: General agreement but with some uncertainty factors
+- **Low Confidence**: Significant uncertainty or conflicting information
+
+### Model Diversity
+We use multiple AI models because they each have different strengths:
+
+- **GPT-4**: Excellent at pattern recognition and reasoning
+- **Claude**: Strong analytical capabilities and nuanced understanding
+- **Gemini**: Good at processing diverse data types and sources
+
+When models agree, it typically indicates a stronger prediction. When they disagree, it suggests higher uncertainty.
+
+## Interpreting Research Data
+
+### Source Quality
+Our AI research service identifies and analyzes various sources:
+
+- **Primary Sources**: Official statements, government data, company reports
+- **News Outlets**: Major media coverage and breaking news
+- **Expert Analysis**: Academic papers, think tank reports, expert opinions
+- **Social Sentiment**: Aggregate social media and forum discussions
+
+<Callout type="tip">
+Pay attention to the recency and credibility of sources. Recent, authoritative sources typically carry more weight in predictions.
+</Callout>
+
+### Key Factors Analysis
+Each prediction highlights the most important factors influencing the outcome:
+
+1. **Primary Drivers**: The 2-3 most critical factors
+2. **Supporting Elements**: Additional relevant considerations  
+3. **Risk Factors**: Potential events that could change the outcome
+4. **Historical Context**: Relevant past events and patterns
+
+## Timing Your Analysis
+
+### Market Dynamics
+Prediction markets are influenced by:
+
+- **Information Flow**: New news can rapidly shift odds
+- **Trader Sentiment**: Collective market psychology
+- **Liquidity**: Available trading volume and market depth
+- **Time Decay**: Approaching resolution dates affect trading patterns
+
+### Optimal Analysis Timing
+Generate predictions when:
+
+- **After Major News**: Following significant developments
+- **Before Key Events**: Prior to debates, announcements, or deadlines
+- **During Market Movement**: When odds are shifting rapidly
+- **For Long-Term Analysis**: When planning positions weeks or months ahead
+
+## Combining Multiple Predictions
+
+### Cross-Market Analysis
+Related markets often provide additional insights:
+
+- **Presidential Election + Senate Control**: Correlated political outcomes
+- **Economic Indicators + Market Performance**: Connected financial predictions
+- **Technology Launches + Company Performance**: Business-related markets
+
+### Temporal Analysis
+Compare predictions over time:
+
+- **Trend Analysis**: How probabilities change as events approach
+- **News Impact**: How specific events affect prediction accuracy
+- **Model Consistency**: Which models perform best for different market types
+
+## Risk Management
+
+<Callout type="warn">
+BetterAI is an analysis tool, not financial advice. Always do your own research and never risk more than you can afford to lose.
+</Callout>
+
+### Diversification
+- Don't rely on a single prediction or market
+- Spread analysis across different categories and time frames
+- Consider opposing viewpoints and alternative scenarios
+
+### Uncertainty Factors
+Always consider:
+
+- **Black Swan Events**: Unpredictable, high-impact occurrences
+- **Information Delays**: Markets may not reflect the latest developments
+- **Model Limitations**: AI has inherent biases and knowledge cutoffs
+
+## Advanced Tips
+
+### Research Validation
+- Cross-reference our analysis with your own research
+- Look for additional sources not covered in our data collection
+- Consider expert opinions and domain-specific knowledge
+
+### Market Timing
+- Understand that prediction markets can be inefficient
+- Look for discrepancies between AI analysis and current market odds
+- Consider both short-term volatility and long-term fundamentals
+
+### Documentation
+- Keep records of your predictions and their outcomes
+- Track which types of markets and factors you analyze best
+- Learn from both successful and unsuccessful analyses
+
+## Common Pitfalls to Avoid
+
+1. **Over-Reliance**: Using AI predictions as the sole basis for decisions
+2. **Recency Bias**: Overweighting the most recent information
+3. **Confirmation Bias**: Only generating predictions that confirm existing beliefs
+4. **Ignoring Uncertainty**: Not accounting for confidence levels and risk factors
+
+## Next Steps
+
+- Practice with low-stakes markets to understand prediction patterns
+- Experiment with different market categories to find your strengths
+- Track prediction accuracy over time to refine your approach
+- Join our community discussions to share insights and learn from others
+```
+
+---
+
+## 📄 content/docs/legal/privacy-policy.mdx
+
+```mdx
+---
+title: "Privacy Policy"
+order: 2
+tags: ["legal", "privacy"]
+---
+
+# Privacy Policy
+
+*Last updated: {new Date().toLocaleDateString()}*
+
+This Privacy Policy describes how BetterLabs LLC ("BetterLabs", "we", "us" or "our") collects, uses, and shares information in connection with the BetterAI product (the "Service"). By using the Service, you agree to the collection and use of information in accordance with this policy.
+
+## Information We Collect
+
+We collect information you provide directly to us, such as when you use our services, create an account, or contact us for support.
+
+- Account information (email, username)
+- Usage data and preferences
+- Communication data when you contact us
+- Technical information about your device and browser
+- Log data (IP address, request metadata, timestamps)
+- Cookies and similar technologies as described below
+
+## How We Use Your Information
+
+We use the information we collect to:
+
+- Provide and improve our services
+- Personalize your experience
+- Communicate with you about updates and changes
+- Ensure security and prevent fraud
+- Comply with legal obligations
+- Research and develop new features and to evaluate model and system performance
+
+## Information Sharing
+
+<Callout type="info">
+We do not sell, trade, or otherwise transfer your personal information to third parties except as described in this policy or with your consent.
+</Callout>
+
+We may share information with:
+
+- Service providers who assist in operating our platform
+- Legal authorities when required by law
+- Business partners with your explicit consent
+- Analytics and infrastructure providers that process data on our behalf under contractual safeguards
+
+## Data Security
+
+We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+
+<Callout type="warn">
+No method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+</Callout>
+
+## Data Retention
+
+We retain personal information for as long as necessary to provide the Service, comply with our legal obligations, resolve disputes, and enforce our agreements. We may retain aggregated or de-identified data for research and analytics purposes.
+
+## Your Rights
+
+You have the right to:
+
+- Access your personal information
+- Correct inaccurate information
+- Request deletion of your data
+- Opt-out of certain communications
+- Port your data to another service
+
+To exercise these rights, contact us at [hello@betterai.tools](mailto:hello@betterai.tools).
+
+## Cookies and Tracking
+
+We use cookies and similar technologies to enhance your experience, analyze usage patterns, and provide personalized content. You can control cookie settings through your browser preferences.
+
+We may also use third-party analytics tools that collect information sent by your device or our Service.
+
+## Children's Privacy
+
+Our services are not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately.
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.
+
+## Contact Us
+
+If you have any questions about this Privacy Policy, please contact us at:
+
+Email: [hello@betterai.tools](mailto:hello@betterai.tools)  
+Company: BetterLabs LLC
+
+If you reside in a region with specific data protection laws, you may have additional rights under those laws. We will comply with applicable legal requirements when processing your information.
+
+## No Financial Advice
+
+<Callout type="warn">
+BetterAI is a research and analysis tool. We do not provide financial, investment, legal, or tax advice. Any information or content provided by the Service is for informational purposes only and should not be construed as a recommendation to engage in any transaction or investment strategy.
+</Callout>
+```
+
+---
+
+## 📄 content/docs/legal/terms-of-service.mdx
+
+```mdx
+---
+title: "Terms of Service"
+order: 1
+tags: ["legal", "terms"]
+---
+
+# Terms of Service
+
+*Last updated: {new Date().toLocaleDateString()}*
+
+These Terms of Service ("Terms") govern your access to and use of BetterAI (the "Service"), provided by BetterLabs LLC ("BetterLabs", "we", "us", or "our"). By accessing or using the Service, you agree to be bound by these Terms.
+
+## 1. The Service
+
+BetterAI enables users to invoke multiple large language models (LLMs) with enriched datasets to analyze and research prediction markets. The Service is for informational and educational purposes only.
+
+## 2. Eligibility
+
+You must be capable of forming a binding contract to use the Service and comply with all applicable laws in your jurisdiction.
+
+## 3. Accounts and Security
+
+If you create an account, you are responsible for maintaining the confidentiality of your credentials and for all activities under your account. Notify us immediately of any unauthorized use.
+
+## 4. Acceptable Use
+
+- Do not violate any laws or infringe third-party rights.
+- Do not attempt to access the Service by automated means in violation of rate limits.
+- Do not interfere with or disrupt the Service's integrity or performance.
+- Do not use the Service to develop models or systems that compete unfairly with BetterAI.
+- Do not scrape, crawl, spider, harvest, or bulk export any results, outputs, content, or data from the Service (manually or via automated means), except as expressly permitted in writing by BetterAI.
+- Do not reverse engineer, decompile, disassemble, or attempt to derive the source code, underlying models, or ideas of the Service.
+- Do not use the Service's outputs, results, or data to create, train, fine-tune, evaluate, or improve any AI model, dataset, or service that competes with BetterAI, unless expressly permitted by a separate written agreement.
+
+## 5. AI Output; No Advice
+
+<Callout type="warn">
+The Service may generate AI-assisted content that can be inaccurate, incomplete, or out of date. We do not warrant the accuracy, reliability, or usefulness of any output. The Service does not provide financial, investment, legal, or tax advice, and no content should be relied upon as a recommendation to make any trade or decision. Markets are volatile and you can lose money. You are solely responsible for your decisions.
+</Callout>
+
+## 6. Third-Party Services
+
+The Service may integrate with or link to third-party services (including API providers and prediction market platforms). We are not responsible for third-party services or their terms.
+
+## 7. Fees and Credits
+
+Certain features may require payment or credits. Fees are disclosed at the point of purchase and are non-refundable except where required by law.
+
+## 8. Intellectual Property
+
+We and our licensors own all rights, title, and interest in and to the Service, including all software, content, and trademarks. You receive a limited, revocable, non-exclusive, non-transferable license to use the Service in accordance with these Terms.
+
+## 9. User Content
+
+If you submit content to the Service, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, and display that content as necessary to provide and improve the Service. You represent and warrant that you have all rights necessary for such content.
+
+## 10. Beta Features
+
+We may offer alpha or beta features. These are provided on an "as is" basis for testing and evaluation and may be changed or discontinued at any time.
+
+## 11. Disclaimers
+
+THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE ERROR-FREE OR UNINTERRUPTED.
+
+## 12. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL BETTERLABS LLC OR ITS AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SERVICE.
+
+## 13. Indemnification
+
+You agree to indemnify and hold harmless BetterLabs LLC and its affiliates from any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising from or related to your use of the Service or violation of these Terms.
+
+## 14. Governing Law
+
+These Terms are governed by the laws of the jurisdiction in which BetterLabs LLC is organized, without regard to its conflict of laws rules, unless a different law is required by applicable regulations.
+
+## 15. Changes to These Terms
+
+We may modify these Terms from time to time. Changes are effective when posted. Your continued use of the Service after changes become effective constitutes your acceptance of the revised Terms.
+
+## 16. Termination
+
+We may suspend or terminate your access to the Service at any time if you violate these Terms or use the Service in a way that could cause harm.
+
+## 17. Contact
+
+For questions about these Terms, contact us at [hello@betterai.tools](mailto:hello@betterai.tools).
+```
+
+---
+
+## 📄 content/docs/overview/how-it-works.mdx
+
+```mdx
+---
+title: "How It Works"
+order: 3
+tags: ["overview", "process"]
+---
+
+# How BetterAI Works
+
+BetterAI transforms complex market analysis into a simple, one-click experience through our enterprise-grade data pipeline designed for consumer users.
+
+## The BetterAI Process
+
+### 1. Market Analysis
+When you select a prediction market, our AI first analyzes the question to understand what information would be most valuable for making an accurate prediction.
+
+### 2. Data Source Identification
+Our AI identifies the most relevant and current data sources for that specific market, including:
+- News articles and reports
+- Economic indicators
+- Social sentiment
+- Historical patterns
+- Expert opinions
+
+### 3. Intelligent Research
+Our market research service automatically gathers fresh data from identified sources, ensuring your prediction is based on the latest available information.
+
+### 4. Multi-Model Synthesis
+Multiple leading AI models (GPT-4, Claude, Gemini, and others) analyze all gathered data and provide their predictions with reasoning.
+
+### 5. Unified Analysis
+All perspectives are synthesized into a comprehensive analysis that shows:
+- Consensus prediction
+- Key factors influencing the outcome
+- Confidence levels
+- Reasoning from each AI model
+```
+
+---
+
+## 📄 content/docs/overview/prediction-markets.mdx
+
+```mdx
+---
+title: "What are Prediction Markets?"
+order: 2
+tags: ["overview", "prediction-markets"]
+---
+
+# What are Prediction Markets?
+
+Prediction markets are financial markets where people can bet on the outcomes of future events. They harness the "wisdom of crowds" to generate probabilistic forecasts about everything from elections to economic indicators.
+
+## History of Prediction Markets
+
+### Academic Origins
+The concept of prediction markets emerged in the 1980s, but it wasn't until the University of Iowa launched the Iowa Electronic Markets (IEM) in 1988 that real-money trading began. IEM was designed as a research tool to test the hypothesis that market prices could outpace traditional polls in forecasting election results. This early foray proved remarkably accurate, paving the way for deeper academic interest.
+
+### From Research to Regulation
+In the 2000s, economists like Robin Hanson popularized the idea of "ideas futures," proposing formal market scoring rules to guarantee liquidity. Hanson's Logarithmic Market Scoring Rule (LMSR) became the de facto mechanism for many academic and hobbyist markets. Over the same period, organizations such as PredictIt in the U.S. navigated regulatory no-action letters from the Commodity Futures Trading Commission, demonstrating that small-scale prediction markets could operate legally.
+
+### Key Milestones
+- **2000s**: Launch of PredictIt, IEM expansion, and the first corporate internal markets (e.g., Microsoft's use of internal predictive markets for project forecasting)
+- **2014-2016**: Ethereum's emergence enabled decentralized markets like Augur and Gnosis's Omen, democratizing access via smart contracts
+- **2021-2024**: The rise of Base-chain platforms brought 0DTE (zero-days-to-expiry) mechanics and seamless USDC settlement, exemplified by Limitless Exchange
+
+## How They Work
+
+1. **Market Creation**: A question is posed (e.g., "Will it rain tomorrow?")
+2. **Trading**: People buy and sell shares representing different outcomes
+3. **Price Discovery**: Share prices reflect the crowd's collective belief about probability
+4. **Resolution**: When the event occurs, winning shares pay out
+
+## Popular Platforms
+
+- **[Polymarket](https://polymarket.com/)**: The largest crypto-based prediction market
+- **[Kalshi](https://kalshi.com/)**: CFTC-regulated prediction market for US users
+
+## Why They Matter
+
+Prediction markets often outperform traditional forecasting methods because:
+
+- **Financial Incentives**: Real money encourages careful analysis
+- **Aggregated Wisdom**: Many perspectives combined
+- **Real-Time Updates**: Prices adjust as new information emerges
+- **Track Record**: Historical accuracy can be measured and verified
+
+## The Challenge
+
+While prediction markets are powerful, making good predictions requires:
+- Deep research into relevant factors
+- Understanding of market dynamics
+- Analysis of multiple data sources
+- Synthesis of complex information
+
+This is where BetterAI comes in - automating the research and analysis process with AI.
+```
+
+---
+
+## 📄 content/docs/overview/what-is-betterai.mdx
+
+```mdx
+---
+title: "What is BetterAI?"
+order: 1
+tags: ["overview", "introduction"]
+---
+
+# What is BetterAI?
+
+BetterAI is a prediction market analysis tool that combines multiple AI models with enriched datasets to help you make better-informed decisions on prediction markets like [Polymarket](https://polymarket.com/) or [Kalshi](https://kalshi.com/).
+
+## Core Value Proposition
+
+Our goal is to enable everyone to access the benefits best-in-class AI models and data enrichment tools to inform their prediction market betting decisions. 
+
+Users should get the benefits of AI engineering best practices to provide the absolute best possible prediction, regardless of their technical expertise.
+
+
+## Key Features
+
+- **Multi-AI Analysis**: Access multiple leading AI models (GPT-4, Claude, Gemini) for diverse perspectives
+- **Enriched Data**: AI-powered web research gathers relevant context for each market
+- **Enterprise-Grade Pipeline**: Consumer-friendly interface powered by sophisticated data processing
+- **Real-Time Insights**: Fresh predictions based on current market conditions and news
+
+## How It's Different
+
+Unlike basic prediction tools, BetterAI doesn't just give you a single AI's opinion. It:
+
+1. Analyzes the market question
+2. Identifies relevant data sources
+3. Gathers current information from the web
+4. Synthesizes insights from multiple AI models
+5. Provides you with a comprehensive analysis
+
+Not all AIs are created equal - BetterAI helps you combine the best of all AI models for prediction market outcomes.
+```
+
+---
+
+## 🏁 Export Complete
+
+This export contains all 9 documentation files from the `content/docs` directory, formatted in repomix style with clear file boundaries and a complete file tree structure. Each file includes its full content with preserved MDX formatting and metadata.
