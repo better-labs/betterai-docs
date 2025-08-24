@@ -1,45 +1,35 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "BetterAI Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3B82F6",
+    "light": "#60A5FA",
+    "dark": "#2563EB"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
       {
-        "group": "Getting started",
+        "group": "Overview",
         "pages": [
-          "index",
-          "quickstart",
-          "development"
+          "overview/what-is-betterai",
+          "overview/prediction-markets",
+          "overview/how-it-works"
         ]
       },
       {
-        "group": "Customization",
+        "group": "Legal",
         "pages": [
-          "essentials/settings",
-          "essentials/navigation"
+          "legal/terms-of-service",
+          "legal/privacy-policy"
         ]
       },
       {
-        "group": "Writing content",
+        "group": "Company",
         "pages": [
-          "essentials/markdown",
-          "essentials/code",
-          "essentials/images",
-          "essentials/reusable-snippets"
-        ]
-      },
-      {
-        "group": "AI tools",
-        "pages": [
-          "ai-tools/cursor",
-          "ai-tools/claude-code",
-          "ai-tools/windsurf"
+          "contact",
+          "changelog"
         ]
       }
     ],
@@ -51,34 +41,19 @@
           "icon": "chart-line"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "anchor": "X (Twitter)",
+          "href": "https://x.com/hellobetterai",
           "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/public/betterai-logo.png",
+    "dark": "/public/betterai-logo-dark.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "links": []
   },
   "contextual": {
     "options": [
@@ -94,9 +69,13 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/hellobetterai"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/overview/what-is-betterai"
+    }
+  ]
 }
