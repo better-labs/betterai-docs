@@ -53,8 +53,7 @@
     "dark": "/betterai-logo-dark.png"
   },
   "navbar": {
-    "links": [],
-    "primary": null
+    "links": []
   },
   "contextual": {
     "options": [
