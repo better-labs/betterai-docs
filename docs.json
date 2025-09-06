@@ -49,8 +49,8 @@
     }
   },
   "logo": {
-    "light": "/public/betterai-logo-horizontal.png",
-    "dark": "/public/betterai-logo-horizontal.png"
+    "light": "/betterai-logo-horizontal.png",
+    "dark": "/betterai-logo-horizontal-dark.png"
   },
   "navbar": {
     "links": []
